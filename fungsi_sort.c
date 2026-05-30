@@ -120,7 +120,11 @@ void insertion_sort() {
         { data_bilangan[j] = data_bilangan[j - 1]; j--; }
         data_bilangan[j] = temp;
     }
-  
+
+    waktu_akhir = clock();
+    kompleksitas_waktu = ((double)(waktu_akhir - waktu_mulai)) / CLOCKS_PER_SEC;
+    printf("Waktu Yang Diperlukan: %f detik\n", kompleksitas_waktu);
+    tampilan = InputTampilanSebelumAtauSetelahSorting(MAX_INT);
     printf("Setelah Sorting:\n");
     TampilanSebelumAtauSetelahSorting(tampilan, MAX_INT);
 }
