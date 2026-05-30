@@ -15,3 +15,11 @@ void menu_utama(){
         scanf("%d", &input);
         while(getchar() !='\n');
         switch (input)
+        {
+        case 1:
+            menu_sorting_dasar();
+            break;
+        case 2:
+            menu_advanced_sorting();
+            break;
+        case 3:
