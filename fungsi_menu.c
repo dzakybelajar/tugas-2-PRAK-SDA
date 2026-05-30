@@ -31,3 +31,12 @@ void menu_utama(){
         }
     } while (input != 3);
 }
+
+void menu_advanced_sorting(){
+    if(baca_file() == 0) {return;}
+    do
+    {
+        input = 0;
+        printf("\n==== ADVANCED SORTING ====\n");
+        printf("1. Merge Sort\n");
+        printf("2. Quick Sort\n");
