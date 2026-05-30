@@ -135,19 +135,3 @@ void selection_sort(){
     printf("Sebelum Sorting: \n");
     TampilanSebelumAtauSetelahSorting(tampilan, MAX_INT);
     
-    waktu_mulai = clock();
-    for (int i = 0; i < MAX_INT - 1; i++)
-    {   
-        int indeks = i;
-        for (int j = i + 1; j < MAX_INT; j++)
-        {
-            if (data_bilangan[j] < data_bilangan[indeks])
-            { indeks = j; }
-        } 
-        if (indeks != i)
-        {
-            int temp = data_bilangan[indeks];
-            data_bilangan[indeks] = data_bilangan[i];
-            data_bilangan[i] = temp;
-        }
-    }
