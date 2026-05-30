@@ -23,3 +23,11 @@ void menu_utama(){
             menu_advanced_sorting();
             break;
         case 3:
+         printf("Keluar Dari Program!");
+            break;
+        default:
+            printf("Input Tidak Valid!\n");
+            break;
+        }
+    } while (input != 3);
+}
