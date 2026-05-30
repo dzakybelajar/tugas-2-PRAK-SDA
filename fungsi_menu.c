@@ -40,3 +40,11 @@ void menu_advanced_sorting(){
         printf("\n==== ADVANCED SORTING ====\n");
         printf("1. Merge Sort\n");
         printf("2. Quick Sort\n");
+        printf("3. Shell Sort\n");
+        printf("4. Kembali\n");
+        printf("Pilih Metode: ");
+        scanf("%d", &input);
+        while(getchar() != '\n');
+        switch (input)
+        {
+        case 1:
