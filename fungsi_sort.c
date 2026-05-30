@@ -4,7 +4,11 @@
 #include<time.h>
 #include"header.h"
 
-
+clock_t waktu_mulai, waktu_akhir;
+double kompleksitas_waktu;
+int tampilan;
+int data_bilangan[MAX_INT];
+char data_string[MAX_WORD][20];
 
 int baca_file(){
     FILE *file = fopen("words.txt", "r");
