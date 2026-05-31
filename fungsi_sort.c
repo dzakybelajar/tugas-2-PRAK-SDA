@@ -30,25 +30,7 @@ int baca_file(){
     return 1;
 }
 
-void acak_data(int mode){
-    if(mode == MAX_INT)
-    {
-        srand(time(NULL));
-        for (int i = 0; i < MAX_INT; i++)
-        { data_bilangan[i] = rand(); }
-    }
-    else if(mode == MAX_WORD)
-    {
-        srand(time(NULL));
-        for (int i = MAX_WORD - 1; i > 0; i--) {
-            int j = rand() % (i + 1);
-            char temp[20];
-            strcpy(temp, data_string[i]);
-            strcpy(data_string[i], data_string[j]);
-            strcpy(data_string[j], temp);
-        }
-    } 
-}
+
 
 int InputTampilanSebelumAtauSetelahSorting(int max){
     int input = 0;
