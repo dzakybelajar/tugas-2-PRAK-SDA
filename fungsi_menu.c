@@ -63,3 +63,12 @@ void menu_advanced_sorting(){
             printf("Input Tidak Valid!\n");
             break;
         }
+    } while (input != 4);
+}
+
+void menu_sorting_dasar(){
+    do
+    {   
+        input = 0;
+        printf("\n==== SORTING DASAR ====\n");
+        printf("1. Bubble Sort\n");
