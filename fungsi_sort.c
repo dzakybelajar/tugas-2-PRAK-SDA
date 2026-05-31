@@ -291,3 +291,7 @@ void shell_sort(){
             strcpy(data_string[j], temp[0]);
         }
         gap = gap / 2;
+    }
+    waktu_akhir = clock();
+    kompleksitas_waktu = ((double) (waktu_akhir - waktu_mulai)) / CLOCKS_PER_SEC;
+    printf("Waktu Yang Diperlukan: %f detik\n", kompleksitas_waktu);
