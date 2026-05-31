@@ -151,6 +151,7 @@ void selection_sort(){
             data_bilangan[i] = temp;
         }
     }
+    
     waktu_akhir = clock();
     kompleksitas_waktu = ((double) (waktu_akhir - waktu_mulai)) / CLOCKS_PER_SEC;
     printf("Waktu Yang Diperlukan: %f detik\n", kompleksitas_waktu);
