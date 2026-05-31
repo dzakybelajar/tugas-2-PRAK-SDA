@@ -190,4 +190,5 @@ void merge(int left, int mid, int right){
     { strcpy(data_string[i], temp[i]); }
 }
 
-
+void merge_sort_recursive(int left, int right){
+    
