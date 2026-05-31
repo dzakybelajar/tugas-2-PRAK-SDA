@@ -56,3 +56,10 @@ void menu_advanced_sorting(){
         case 3:
             shell_sort();
             break;
+        case 4:
+            printf("Kembali Ke Menu Utama!\n");
+            break;
+        default:
+            printf("Input Tidak Valid!\n");
+            break;
+        }
