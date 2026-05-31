@@ -1,4 +1,8 @@
-
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<time.h>
+#include"header.h"
 
 clock_t waktu_mulai, waktu_akhir;
 double kompleksitas_waktu;
