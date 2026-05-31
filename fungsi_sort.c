@@ -243,3 +243,10 @@ int quick_sort_partition(int low, int high){
 }
 
 void quick_sort_recursive (int low, int high) {
+        if(low < high)
+    {
+        int pi = quick_sort_partition(low, high);
+        quick_sort_recursive(low, pi - 1);
+        quick_sort_recursive(pi + 1, high);
+    }
+}
