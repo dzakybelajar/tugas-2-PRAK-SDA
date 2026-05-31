@@ -79,3 +79,10 @@ void menu_sorting_dasar(){
         scanf("%d", &input);
         while(getchar() != '\n');
         switch (input)
+        {
+        case 1:
+           bubble_sort();
+           break;
+        case 2:
+            insertion_sort();
+            break;
