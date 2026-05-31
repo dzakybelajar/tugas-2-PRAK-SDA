@@ -224,3 +224,5 @@ void swap(char a[], char b[]) {
     strcpy(a, b);
     strcpy(b, temp);
 }
+
+int quick_sort_partition(int low, int high){
