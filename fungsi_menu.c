@@ -93,3 +93,8 @@ void menu_sorting_dasar(){
             printf("Kembali Ke Menu Utama!\n");
             break;
         default:
+            printf("Input Tidak Valid!\n");
+            break;
+        }
+    } while (input != 4);
+}
