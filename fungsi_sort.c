@@ -191,4 +191,13 @@ void merge(int left, int mid, int right){
 }
 
 void merge_sort_recursive(int left, int right){
-    
+        if(left < right)
+    {
+        int mid = (left + right) / 2;
+        merge_sort_recursive(left, mid);
+        merge_sort_recursive(mid + 1, right);
+        merge(left, mid, right);
+    }
+}
+
+
