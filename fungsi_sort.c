@@ -273,3 +273,14 @@ void shell_sort(){
     tampilan = InputTampilanSebelumAtauSetelahSorting(MAX_WORD);
     printf("Sebelum Sorting: \n");
     TampilanSebelumAtauSetelahSorting(tampilan, MAX_WORD);
+    
+    waktu_mulai = clock();
+    int gap = MAX_WORD / 2;
+    while (gap >= 1)
+    {
+        for (int i = gap; i < MAX_WORD; i++) 
+        {   
+            int j = i;
+            char temp[1][20];
+            strcpy(temp[0], data_string[j]);
+            while (j - gap >= 0 && strcmp(temp[0], data_string[j - gap]) < 0)
