@@ -10,7 +10,25 @@ int tampilan;
 int data_bilangan[MAX_INT];
 char data_string[MAX_WORD][20];
 
+int baca_file(){
+    FILE *file = fopen("words.txt", "r");
 
+    if (file == NULL)
+    { printf ("File Tidak Ditemukan!\n"); return 0; }
+    else if (fgetc(file) == EOF)
+    { printf("File tidak Ada Konten!\n"); fclose(file); return 0; }
+    rewind(file);
+
+    printf("File Berhasil Dibaca!\n");
+    int i = 0;
+    while (i < MAX_WORD && (fgets(data_string[i],20,file))!= NULL)
+    {
+        data_string[i][strcspn(data_string[i], "\n")] = 0;
+        i++;
+    }
+    fclose(file);
+    return 1;
+}
 
 void acak_data(int mode){
     if(mode == MAX_INT)
