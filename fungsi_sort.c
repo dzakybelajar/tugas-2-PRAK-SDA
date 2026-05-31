@@ -151,7 +151,6 @@ void selection_sort(){
             data_bilangan[i] = temp;
         }
     }
-    
     waktu_akhir = clock();
     kompleksitas_waktu = ((double) (waktu_akhir - waktu_mulai)) / CLOCKS_PER_SEC;
     printf("Waktu Yang Diperlukan: %f detik\n", kompleksitas_waktu);
@@ -160,3 +159,11 @@ void selection_sort(){
     printf("Setelah Sorting: \n");
     TampilanSebelumAtauSetelahSorting(tampilan, MAX_INT);
 }
+
+void merge(int left, int mid, int right){
+    char temp[MAX_WORD][20];
+    int i = left;
+    int j = mid + 1;
+    int k = left;
+
+    
