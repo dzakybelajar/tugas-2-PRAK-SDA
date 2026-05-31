@@ -217,3 +217,10 @@ void merge_sort(){
     TampilanSebelumAtauSetelahSorting(tampilan, MAX_WORD);
 }
 
+void swap(char a[], char b[]) {
+    char temp[20];
+
+    strcpy(temp, a);
+    strcpy(a, b);
+    strcpy(b, temp);
+}
