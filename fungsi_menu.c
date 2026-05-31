@@ -98,3 +98,8 @@ void menu_sorting_dasar(){
         }
     } while (input != 4);
 }
+
+int main(){
+    menu_utama();
+    return 0;
+}
