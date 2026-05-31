@@ -241,3 +241,5 @@ int quick_sort_partition(int low, int high){
     swap(data_string[i + 1], data_string[high]);
     return i + 1;
 }
+
+void quick_sort_recursive (int low, int high) {
