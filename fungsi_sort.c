@@ -250,3 +250,9 @@ void quick_sort_recursive (int low, int high) {
         quick_sort_recursive(pi + 1, high);
     }
 }
+
+void quick_sort(){
+    acak_data(MAX_WORD);
+    tampilan  = InputTampilanSebelumAtauSetelahSorting(MAX_WORD);
+    printf("Sebelum Sorting: \n");
+    TampilanSebelumAtauSetelahSorting(tampilan, MAX_WORD);
