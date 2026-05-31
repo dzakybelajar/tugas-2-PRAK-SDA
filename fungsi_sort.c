@@ -256,3 +256,14 @@ void quick_sort(){
     tampilan  = InputTampilanSebelumAtauSetelahSorting(MAX_WORD);
     printf("Sebelum Sorting: \n");
     TampilanSebelumAtauSetelahSorting(tampilan, MAX_WORD);
+    
+    waktu_mulai = clock();
+    quick_sort_recursive(0, MAX_WORD - 1);
+    waktu_akhir = clock();
+    kompleksitas_waktu = ((double) (waktu_akhir - waktu_mulai)) / CLOCKS_PER_SEC;
+    printf("Waktu Yang Diperlukan: %f detik\n", kompleksitas_waktu);
+
+    tampilan = InputTampilanSebelumAtauSetelahSorting(MAX_WORD);
+    printf("Setelah Sorting: \n");
+    TampilanSebelumAtauSetelahSorting(tampilan, MAX_WORD);
+}
