@@ -166,4 +166,28 @@ void merge(int left, int mid, int right){
     int j = mid + 1;
     int k = left;
 
-    
+    while(i <= mid && j <= right)
+    {
+        if(strcmp(data_string[i], data_string[j]) < 0)
+        { strcpy(temp[k], data_string[i]); i++; }
+        else
+        { strcpy(temp[k], data_string[j]); j++; } 
+        k++;
+    }
+
+    while(i <= mid)
+    {
+        strcpy(temp[k], data_string[i]);
+        i++; k++;
+    }
+
+    while(j <= right)
+    {
+        strcpy(temp[k], data_string[j]);
+        j++; k++;
+    }
+        for(i = left; i <= right; i++)
+    { strcpy(data_string[i], temp[i]); }
+}
+
+
