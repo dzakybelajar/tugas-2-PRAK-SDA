@@ -86,3 +86,10 @@ void menu_sorting_dasar(){
         case 2:
             insertion_sort();
             break;
+        case 3:
+            selection_sort();
+            break;
+        case 4:
+            printf("Kembali Ke Menu Utama!\n");
+            break;
+        default:
