@@ -72,3 +72,10 @@ void menu_sorting_dasar(){
         input = 0;
         printf("\n==== SORTING DASAR ====\n");
         printf("1. Bubble Sort\n");
+        printf("2. Insertion Sort\n");
+        printf("3. Selection Sort\n");
+        printf("4. Kembali\n");
+        printf("Pilih Metode: ");
+        scanf("%d", &input);
+        while(getchar() != '\n');
+        switch (input)
