@@ -267,3 +267,9 @@ void quick_sort(){
     printf("Setelah Sorting: \n");
     TampilanSebelumAtauSetelahSorting(tampilan, MAX_WORD);
 }
+
+void shell_sort(){
+    acak_data(MAX_WORD);
+    tampilan = InputTampilanSebelumAtauSetelahSorting(MAX_WORD);
+    printf("Sebelum Sorting: \n");
+    TampilanSebelumAtauSetelahSorting(tampilan, MAX_WORD);
