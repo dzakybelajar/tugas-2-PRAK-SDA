@@ -296,7 +296,6 @@ void shell_sort(){
     kompleksitas_waktu = ((double) (waktu_akhir - waktu_mulai)) / CLOCKS_PER_SEC;
     printf("Waktu Yang Diperlukan: %f detik\n", kompleksitas_waktu);
 
-    
     tampilan = InputTampilanSebelumAtauSetelahSorting(MAX_WORD);
     printf("Setelah Sorting: \n");
     TampilanSebelumAtauSetelahSorting(tampilan, MAX_WORD);    
