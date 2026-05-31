@@ -284,3 +284,10 @@ void shell_sort(){
             char temp[1][20];
             strcpy(temp[0], data_string[j]);
             while (j - gap >= 0 && strcmp(temp[0], data_string[j - gap]) < 0)
+            {
+                strcpy(data_string[j], data_string[j - gap]);
+                j -= gap;
+            }
+            strcpy(data_string[j], temp[0]);
+        }
+        gap = gap / 2;
