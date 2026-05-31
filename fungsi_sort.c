@@ -226,3 +226,18 @@ void swap(char a[], char b[]) {
 }
 
 int quick_sort_partition(int low, int high){
+        char pivot[20];
+    strcpy(pivot, data_string[high]);
+    
+    int i = low - 1;
+    for(int j = low; j <= high - 1; j++)
+    {
+        if(strcmp(data_string[j], pivot) < 0)
+        {
+            i++;
+            swap(data_string[i], data_string[j]);
+        }
+    }
+    swap(data_string[i + 1], data_string[high]);
+    return i + 1;
+}
